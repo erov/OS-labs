@@ -6,6 +6,6 @@
 #echo $max
 
 max=$1
-if [[ ${#max} -lt ${#2} || ( ${#max} -eq ${#2} && $max < $2 ) ]]; then max=$2; fi
-if [[ ${#max} -lt ${#3} || ( ${#max} -eq ${#3} && $max < $3 ) ]]; then max=$3; fi
+if [[ $(echo $max\<$2 | bc) -eq 1 ]]; then max=$2; fi
+if [[ $(echo $max\<$3 | bc) -eq 1 ]]; then max=$3; fi
 echo $max
