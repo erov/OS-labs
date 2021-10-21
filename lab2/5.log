@@ -1,5 +1,6 @@
 ProcessID=1 : Parent_ProcessID=0 : Average_Running_Time=.47492863009164969450
 ProcessID=2 : Parent_ProcessID=0 : Average_Running_Time=.01556326174496644295
+Average_Running_Children_of_ParentID=0 is .24524594591830806872
 ProcessID=1049 : Parent_ProcessID=1 : Average_Running_Time=.21596176470588235294
 ProcessID=1051 : Parent_ProcessID=1 : Average_Running_Time=.91073361666666666666
 ProcessID=1052 : Parent_ProcessID=1 : Average_Running_Time=.35022087272727272727
@@ -23,6 +24,7 @@ ProcessID=790 : Parent_ProcessID=1 : Average_Running_Time=1.05230765567765567765
 ProcessID=801 : Parent_ProcessID=1 : Average_Running_Time=.08815894750430292598
 ProcessID=809 : Parent_ProcessID=1 : Average_Running_Time=.28442192424242424242
 ProcessID=811 : Parent_ProcessID=1 : Average_Running_Time=.43213915986394557823
+Average_Running_Children_of_ParentID=1 is .33803401659604221059
 ProcessID=10 : Parent_ProcessID=2 : Average_Running_Time=.00174747536027894627
 ProcessID=11 : Parent_ProcessID=2 : Average_Running_Time=.00107080000000000000
 ProcessID=12 : Parent_ProcessID=2 : Average_Running_Time=.01615611280746395250
@@ -89,9 +91,15 @@ ProcessID=725 : Parent_ProcessID=2 : Average_Running_Time=.00128600000000000000
 ProcessID=726 : Parent_ProcessID=2 : Average_Running_Time=.00201100000000000000
 ProcessID=8 : Parent_ProcessID=2 : Average_Running_Time=.00130650000000000000
 ProcessID=9 : Parent_ProcessID=2 : Average_Running_Time=.00445498143950127514
+Average_Running_Children_of_ParentID=2 is .10842806145774304456
 ProcessID=779 : Parent_ProcessID=757 : Average_Running_Time=.09289325000000000000
 ProcessID=783 : Parent_ProcessID=757 : Average_Running_Time=.10262578037135278514
+Average_Running_Children_of_ParentID=757 is .09775951518567639257
 ProcessID=771 : Parent_ProcessID=759 : Average_Running_Time=.10654725000000000000
+Average_Running_Children_of_ParentID=759 is .10654725000000000000
 ProcessID=1338 : Parent_ProcessID=1052 : Average_Running_Time=.12888401267916207276
+Average_Running_Children_of_ParentID=1052 is .12888401267916207276
 ProcessID=1332 : Parent_ProcessID=1327 : Average_Running_Time=.09231000000000000000
+Average_Running_Children_of_ParentID=1327 is .09231000000000000000
 ProcessID=52916 : Parent_ProcessID=1338 : Average_Running_Time=.04885695138888888888
+Average_Running_Children_of_ParentID=1338 is .04885695138888888888

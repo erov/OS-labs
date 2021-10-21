@@ -12,7 +12,9 @@ if [ -z "$num" ]; then num=0; fi
 
 if [ ! -z "$denom" ]
 then
-echo "ProcessID="$pid" : Parent_ProcessID="$ppid" : Average_Running_Time="$(bc -l <<< $num"/"$denom) >> 4.log
+result=$result"\nProcessID="$pid" : Parent_ProcessID=;"$ppid"; : Average_Running_Time="$(bc -l <<< $num"/"$denom)
 fi
-
 done
+
+echo -e "$result" | sort -t ";" -n -k2 | tr -d ";" | tail -n +2 > 4.log
+
