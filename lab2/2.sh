@@ -1,6 +1,5 @@
 #!/bin/bash
 
-for pid in $(ls /proc/ | grep "[0-9]\+")
-do
-if [ ! -z $(readlink /proc/"$pid"/exe | grep "/sbin/") ]; then echo "$pid" >> 2.log; fi
-done
+#ps -e -o pid,command | awk '$2 ~ /\/sbin\// {print $1}' > 2.log
+
+ps -e -o pid,command | awk '$2 ~ /^\/sbin\// {print $1}' > 2.log

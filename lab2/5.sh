@@ -1,33 +1,35 @@
 #!/bin/bash
 
-appendSummary(){ #result lastPpid totalAvt cnt
-	result=$1"\nAverage_Running_Children_of_ParentID="$2" is "$(bc -l <<< "$3/$4")
-	echo -e "$result"
+#USAGE: result lastPpid totalAvt cnt
+appendSummary(){
+result=$1"\nAverage_Running_Children_of_ParentID="$2" is "$(bc -l <<< "$3/$4")
+echo -e "$result"
 }
+
 
 filename="4.log"
 lastPpid=0
 cnt=0
 totalAvt=0
 
-while read -r line
+while read line
 do
+
 ppid=$(echo "$line" | awk '{print $3}' | awk -F "=" '{print $2}')
 avt=$(echo "$line" | awk '{print $5}' | awk -F "=" '{print $2}')
 
-if [[ "$ppid" -eq "$lastPpid" ]]
+if [[ "$ppid" -ne "$lastPpid" ]]
 then
-(( cnt++ ))
-totalAvt=$(bc -l <<< "$totalAvt+$avt")
-
-else
 result=$(appendSummary "$result" "$lastPpid" "$totalAvt" "$cnt")
-cnt=1
-totalAvt=$avt
+cnt=0
+totalAvt=0
 lastPpid=$ppid
 fi
 
+(( cnt++ ))
+totalAvt=$(bc <<< "$totalAvt+$avt")
 result=$result"\n"$line
+
 done < "$filename"
 
 result=$(appendSummary "$result" "$lastPpid" "$totalAvt" "$cnt")

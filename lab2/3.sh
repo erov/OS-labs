@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ps -e --format="pid time" --sort -time,pid | head -2 | tail -1
+ps -e --sort=start_time -o pid,ppid,start_time | tail -n +2 | awk -v this=$$ '$1 != this && $2 != this {print "PID: " $1 "  START_TIME: " $3}' | tail -n 1
