@@ -8,6 +8,7 @@ ppid=$(grep -s "PPid:" "/proc/"$pid"/status" | awk '{print $2}')
 num=$(grep -s "sum_exec_runtime" "$sched" | awk '{print $3}')
 denom=$(grep -s "nr_switches" "$sched" | awk '{print $3}')
 
+# maybe check all fiels
 if [[ -n "$denom" ]]
 then
 #wrap ppid in ';' to sort by splitting them

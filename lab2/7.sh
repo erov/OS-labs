@@ -15,7 +15,9 @@ fi
 
 done
 
+
 sleep 60
+
 
 for i in ${!id[@]}
 do
@@ -31,4 +33,4 @@ fi
 
 done
 
-echo -e "$result" | tail -n +2 | sort -t ":" -n -k3 | head -n +3 > tmp
+echo -e "$result" | tail -n +2 | sort -t ":" -n -k3 | head -n +3
