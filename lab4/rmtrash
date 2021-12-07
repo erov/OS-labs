@@ -26,7 +26,16 @@ then
 mkdir $home/.trash
 fi
 
-id=$(ls -l $home/.trash/ | wc -l)
+#id=$(ls -l $home/.trash/ | wc -l)
+if [[ ! -f $home/.trash/.counter ]]
+then
+echo 0 > $home/.trash/.counter
+fi
+
+id=$(cat $home/.trash/.counter)
+(( id++ ))
+echo $id > $home/.trash/.counter
+
 ln $filename $home/.trash/$id
 rm $filename
 
