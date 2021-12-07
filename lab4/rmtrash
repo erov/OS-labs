@@ -1,0 +1,32 @@
+#!/bin/bash
+
+filename=$1
+home="/home/user"
+
+printError() {
+echo -e "rmtrash: error\nUsage: rmtrash.sh FILENAME\nError: "$1
+exit 1
+}
+
+#check amount
+if (( $# != 1 ))
+then
+printError "expected exactly one argument"
+fi
+
+#check existing
+if [[ ! -f $filename ]]
+then
+printError "no such file '$filename'"
+fi
+
+if [[ ! -d $home/.trash ]]
+then
+mkdir $home/.trash
+fi
+
+id=$(ls -l $home/.trash/ | wc -l)
+ln $filename $home/.trash/$id
+rm $filename
+
+echo $(pwd)"/"$filename" "$id >> $home/trash.log
