@@ -39,4 +39,4 @@ echo $id > $home/.trash/.counter
 ln $filename $home/.trash/$id
 rm $filename
 
-echo $(pwd)"/"$filename" "$id >> $home/trash.log
+echo $(pwd)"/"$filename" "$id >> $home/.trash.log
