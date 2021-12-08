@@ -4,32 +4,38 @@ filename=$1
 home="/home/user"
 
 printError() {
-echo -e "rmtrash: error\nUsage: rmtrash FILENAME\nError: "$1
-exit 1
+	echo -e "rmtrash: error\nUsage: rmtrash FILENAME\nError: "$1
+	exit 1
 }
 
 #check amount
 if (( $# != 1 ))
 then
-printError "expected exactly one argument"
+	printError "expected exactly one argument"
+fi
+
+#check correctness of filename (didn't pass ./.../...)
+if [[ ! $filename =~ ^([0-9a-zA-Z _.\-]+)$ ]]
+then
+	printError "incorrect filename"
 fi
 
 #check existing
 if [[ ! -f $filename ]]
 then
-printError "no such file '$filename'"
+	printError "no such file '$filename'"
 fi
 
 
 if [[ ! -d $home/.trash ]]
 then
-mkdir $home/.trash
+	mkdir $home/.trash
 fi
 
 #id=$(ls -l $home/.trash/ | wc -l)
 if [[ ! -f $home/.trash/.counter ]]
 then
-echo 0 > $home/.trash/.counter
+	echo 0 > $home/.trash/.counter
 fi
 
 id=$(cat $home/.trash/.counter)
