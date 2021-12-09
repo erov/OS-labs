@@ -15,7 +15,7 @@ then
 fi
 
 #check correctness of filename (didn't pass ./.../...)
-if [[ ! $filename =~ ^([0-9a-zA-Z _.\-]+)$ ]]
+if [[ ! $filename =~ ^([0-9a-zA-Z_.\-])*([0-9a-zA-Z _.\-])$ ]]
 then
 	printError "incorrect filename"
 fi
@@ -42,7 +42,7 @@ id=$(cat $home/.trash/.counter)
 (( id++ ))
 echo $id > $home/.trash/.counter
 
-ln $filename $home/.trash/$id
-rm $filename
+ln "$filename" $home/.trash/$id
+rm "$filename"
 
-echo $(pwd)"/"$filename" "$id >> $home/.trash.log
+echo $(pwd)"/"$filename"+"$id >> $home/.trash.log
