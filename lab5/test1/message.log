@@ -1,0 +1,24 @@
+[ 3154.717024] [ 1337]     0  1337    59116        1    98304      474             0 bash
+[ 3154.717666] [ 1549]     0  1549   666584   415726  4964352   195308             0 bash
+[ 3154.717978] Out of memory: Killed process 1549 (bash) total-vm:2666336kB, anon-rss:1662904kB, file-rss:0kB, shmem-rss:0kB, UID:0
+[ 3154.820377] oom_reaper: reaped process 1549 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[ 3390.484032] [ 1337]     0  1337    59116       77    98304      398             0 bash
+[ 3390.484970] [ 1558]     0  1558    59090        1   102400      461             0 bash
+[ 3390.485285] [ 1575]     0  1575   665198   421555  4960256   188072             0 bash
+[ 3390.485594] Out of memory: Killed process 1575 (bash) total-vm:2660792kB, anon-rss:1686220kB, file-rss:0kB, shmem-rss:0kB, UID:0
+[ 3390.576688] oom_reaper: reaped process 1575 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[ 3567.771287] [ 1337]     0  1337    59116        1    98304      475             0 bash
+[ 3567.772206] [ 1558]     0  1558    59090       74   102400      391             0 bash
+[ 3567.772504] [ 1587]     0  1587   664703   421809  4968448   187338             0 bash
+[ 3567.772816] Out of memory: Killed process 1587 (bash) total-vm:2658812kB, anon-rss:1687236kB, file-rss:0kB, shmem-rss:0kB, UID:0
+[ 3567.865737] oom_reaper: reaped process 1587 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[ 3745.052358] [ 1337]     0  1337    59116        1    98304      475             0 bash
+[ 3745.053280] [ 1558]     0  1558    59090       10   102400      455             0 bash
+[ 3745.053578] [ 1596]     0  1596   664109   421249  4956160   187293             0 bash
+[ 3745.053879] Out of memory: Killed process 1596 (bash) total-vm:2656436kB, anon-rss:1684996kB, file-rss:0kB, shmem-rss:0kB, UID:0
+[ 3745.149157] oom_reaper: reaped process 1596 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[ 3888.160408] [ 1337]     0  1337    59116        1    98304      475             0 bash
+[ 3888.161329] [ 1558]     0  1558    59090       11   102400      454             0 bash
+[ 3888.161628] [ 1613]     0  1613   664604   421720  4947968   187327             0 bash
+[ 3888.161930] Out of memory: Killed process 1613 (bash) total-vm:2658416kB, anon-rss:1686880kB, file-rss:0kB, shmem-rss:0kB, UID:0
+[ 3888.275650] oom_reaper: reaped process 1613 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
