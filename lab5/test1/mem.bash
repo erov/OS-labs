@@ -15,4 +15,4 @@ do
 	#break
 done
 
-echo "${#array[@]}"
+#echo "${#array[@]}"

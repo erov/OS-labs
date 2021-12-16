@@ -2,7 +2,7 @@
 
 array=()
 step=0
-> report2.log
+> report.log
 
 while [ true ]
 do
@@ -10,9 +10,9 @@ do
 	(( step++ ))
 	if ! (( step % 100000 ))
 	then
-		echo "Size: ${#array[@]}" >> report2.log
+		echo "Size: ${#array[@]}" >> report.log
 	fi
 	#break
 done
 
-#echo "${#array[@]}"
+echo "${#array[@]}"
