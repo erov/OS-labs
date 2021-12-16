@@ -1,577 +1,551 @@
 == top log no.1
 first table lines:
-top - 05:19:03 up  3:42,  2 users,  load average: 0.00, 0.00, 0.00
+top - 05:34:07 up  3:57,  2 users,  load average: 0.00, 0.02, 0.06
 Tasks: 107 total,   1 running, 106 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 62.5 id, 33.3 wa,  4.2 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1530.9 free,    101.9 used,    194.2 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1583.1 avail Mem 
+%Cpu(s):  0.0 us,  3.8 sy,  0.0 ni, 57.7 id, 34.6 wa,  3.8 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,   1629.1 free,     98.7 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.   1605.2 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
       6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
 'mem.bash' log:
+'mem2.bash' log:
 
 == top log no.2
 first table lines:
-top - 05:19:04 up  3:42,  2 users,  load average: 0.00, 0.00, 0.00
+top - 05:34:08 up  3:57,  2 users,  load average: 0.00, 0.02, 0.06
 Tasks: 107 total,   1 running, 106 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1530.9 free,    101.9 used,    194.2 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1583.1 avail Mem 
+MiB Mem :   1827.1 total,   1629.1 free,     98.7 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.   1605.2 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
       6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
 'mem.bash' log:
+'mem2.bash' log:
 
 == top log no.3
 first table lines:
-top - 05:19:05 up  3:42,  2 users,  load average: 0.00, 0.00, 0.00
-Tasks: 107 total,   1 running, 106 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  6.7 sy,  0.0 ni, 93.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1530.9 free,    101.9 used,    194.2 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1583.1 avail Mem 
+top - 05:34:09 up  3:57,  2 users,  load average: 0.00, 0.02, 0.06
+Tasks: 108 total,   2 running, 106 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 12.5 us,  0.0 sy,  0.0 ni,  0.0 id, 62.5 wa, 25.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,   1621.0 free,    106.8 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.   1597.1 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2619 root      20   0       0      0      0 I   6.7   0.0   0:01.54 kworker/0:3-events
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0  230276  10812   2884 R  47.1   0.6   0:00.08 mem.bash
+   1832 root      20   0  236344    784    516 S   5.9   0.0   0:00.03 bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
+   3003 root      20   0  230276  10812   2884 R  47.1   0.6   0:00.08 mem.bash
+'mem2.bash' log:
 
 == top log no.4
 first table lines:
-top - 05:19:06 up  3:42,  2 users,  load average: 0.00, 0.00, 0.00
-Tasks: 107 total,   1 running, 106 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1530.9 free,    101.9 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1583.1 avail Mem 
+top - 05:34:11 up  3:57,  2 users,  load average: 0.16, 0.06, 0.07
+Tasks: 108 total,   4 running, 104 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,   1523.6 free,    204.1 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.   1499.8 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2619 root      20   0       0      0      0 I   6.7   0.0   0:01.56 kworker/0:3-events
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0  329804 110340   2884 R  93.8   5.9   0:01.16 mem.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
+   3003 root      20   0  329804 110340   2884 R  93.8   5.9   0:01.16 mem.bash
+'mem2.bash' log:
 
 == top log no.5
 first table lines:
-top - 05:19:07 up  3:42,  2 users,  load average: 0.00, 0.00, 0.00
-Tasks: 107 total,   1 running, 106 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1530.9 free,    101.9 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1583.1 avail Mem 
+top - 05:34:12 up  3:57,  2 users,  load average: 0.16, 0.06, 0.07
+Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
+MiB Mem :   1827.1 total,   1425.2 free,    302.6 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.   1401.3 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0  421940 202476   2884 R  41.2  10.8   0:02.15 mem.bash
+   3022 root      20   0  230672  11164   2976 R  41.2   0.6   0:00.08 mem2.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
-      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
 'mem.bash' log:
+   3003 root      20   0  421940 202476   2884 R  41.2  10.8   0:02.15 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  230672  11164   2976 R  41.2   0.6   0:00.08 mem2.bash
 
 == top log no.6
 first table lines:
-top - 05:19:08 up  3:42,  2 users,  load average: 0.00, 0.00, 0.00
-Tasks: 108 total,   2 running, 106 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
-MiB Mem :   1827.1 total,   1461.0 free,    171.8 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1513.2 avail Mem 
+top - 05:34:13 up  3:58,  2 users,  load average: 0.16, 0.06, 0.07
+Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi, 20.0 si,  0.0 st
+MiB Mem :   1827.1 total,   1322.6 free,    405.2 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.   1298.7 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  293504  73936   2912 R  80.0   4.0   0:00.75 mem.bash
-   2619 root      20   0       0      0      0 I   6.7   0.0   0:01.57 kworker/0:3-events_power_ef+
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0  475004 255540   2884 R  40.0  13.7   0:02.71 mem.bash
+   3022 root      20   0  282416  62908   2976 R  40.0   3.4   0:00.64 mem2.bash
+   1556 root      20   0  233780      0      0 S   6.7   0.0   0:01.45 script
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
-      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  293504  73936   2912 R  80.0   4.0   0:00.75 mem.bash
+   3003 root      20   0  475004 255540   2884 R  40.0  13.7   0:02.71 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  282416  62908   2976 R  40.0   3.4   0:00.64 mem2.bash
 
 == top log no.7
 first table lines:
-top - 05:19:10 up  3:42,  2 users,  load average: 0.00, 0.00, 0.00
-Tasks: 108 total,   3 running, 105 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 50.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 25.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1365.2 free,    267.6 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1417.4 avail Mem 
+top - 05:34:15 up  3:58,  2 users,  load average: 0.16, 0.06, 0.07
+Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 20.0 hi, 20.0 si,  0.0 st
+MiB Mem :   1827.1 total,   1218.1 free,    509.6 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.   1194.3 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  391448 171880   2912 R  88.2   9.2   0:01.81 mem.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0  527804 308340   2884 R  41.2  16.5   0:03.28 mem.bash
+   3022 root      20   0  336404 117028   2976 R  41.2   6.3   0:01.22 mem2.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
-   2704 root      20   0  391448 171880   2912 R  88.2   9.2   0:01.81 mem.bash
+   3003 root      20   0  527804 308340   2884 R  41.2  16.5   0:03.28 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  336404 117028   2976 R  41.2   6.3   0:01.22 mem2.bash
 
 == top log no.8
 first table lines:
-top - 05:19:11 up  3:42,  2 users,  load average: 0.16, 0.03, 0.01
-Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
-MiB Mem :   1827.1 total,   1263.9 free,    368.9 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1316.1 avail Mem 
+top - 05:34:16 up  3:58,  2 users,  load average: 0.39, 0.11, 0.09
+Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,   1114.2 free,    613.5 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.   1090.4 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  460748 241312   2912 R  47.1  12.9   0:02.56 mem.bash
-   2721 root      20   0  256412  36968   2904 R  47.1   2.0   0:00.36 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0  582584 363252   2884 R  41.2  19.4   0:03.86 mem.bash
+   3022 root      20   0  387752 168244   2976 R  41.2   9.0   0:01.78 mem2.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  460748 241312   2912 R  47.1  12.9   0:02.56 mem.bash
+   3003 root      20   0  582584 363252   2884 R  41.2  19.4   0:03.86 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  387752 168244   2976 R  41.2   9.0   0:01.78 mem2.bash
 
 == top log no.9
 first table lines:
-top - 05:19:12 up  3:42,  2 users,  load average: 0.16, 0.03, 0.01
-Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi, 20.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1161.4 free,    471.4 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1213.6 avail Mem 
+top - 05:34:17 up  3:58,  2 users,  load average: 0.39, 0.11, 0.09
+Tasks: 109 total,   3 running, 106 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,   1013.0 free,    714.7 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.    989.2 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  514604 295168   2912 R  41.2  15.8   0:03.13 mem.bash
-   2721 root      20   0  307232  87920   2904 R  41.2   4.7   0:00.92 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3022 root      20   0  440552 221308   2976 R  50.0  11.8   0:02.36 mem2.bash
+   3003 root      20   0  633140 413676   2884 R  43.8  22.1   0:04.42 mem.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  514604 295168   2912 R  41.2  15.8   0:03.13 mem.bash
+   3003 root      20   0  633140 413676   2884 R  43.8  22.1   0:04.42 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  440552 221308   2976 R  50.0  11.8   0:02.36 mem2.bash
 
 == top log no.10
 first table lines:
-top - 05:19:14 up  3:43,  2 users,  load average: 0.16, 0.03, 0.01
-Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi, 20.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1059.8 free,    572.9 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1112.1 avail Mem 
+top - 05:34:19 up  3:58,  2 users,  load average: 0.39, 0.11, 0.09
+Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,    908.3 free,    819.5 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.    884.4 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  566876 347440   2912 R  47.1  18.6   0:03.69 mem.bash
-   2721 root      20   0  358712 139400   2904 R  41.2   7.5   0:01.48 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0  688316 468852   2884 R  47.1  25.1   0:05.01 mem.bash
+   3022 root      20   0  492560 273052   2976 R  41.2  14.6   0:02.92 mem2.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  566876 347440   2912 R  47.1  18.6   0:03.69 mem.bash
+   3003 root      20   0  688316 468852   2884 R  47.1  25.1   0:05.01 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  492560 273052   2976 R  41.2  14.6   0:02.92 mem2.bash
 
 == top log no.11
 first table lines:
-top - 05:19:15 up  3:43,  2 users,  load average: 0.16, 0.03, 0.01
-Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,    959.8 free,    673.0 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.   1012.0 avail Mem 
+top - 05:34:20 up  3:58,  2 users,  load average: 0.39, 0.11, 0.09
+Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 28.6 us, 28.6 sy,  0.0 ni,  0.0 id,  0.0 wa, 28.6 hi, 14.3 si,  0.0 st
+MiB Mem :   1827.1 total,    800.6 free,    927.1 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.    776.8 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  617300 397864   2912 R  47.1  21.3   0:04.24 mem.bash
-   2721 root      20   0  410588 191144   2904 R  41.2  10.2   0:02.04 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3022 root      20   0  548264 329020   2976 R  42.1  17.6   0:03.52 mem2.bash
+   3003 root      20   0  742568 522972   2884 R  36.8  28.0   0:05.59 mem.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  617300 397864   2912 R  47.1  21.3   0:04.24 mem.bash
+   3003 root      20   0  742568 522972   2884 R  36.8  28.0   0:05.59 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  548264 329020   2976 R  42.1  17.6   0:03.52 mem2.bash
 
 == top log no.12
 first table lines:
-top - 05:19:16 up  3:43,  2 users,  load average: 0.31, 0.07, 0.02
-Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 33.3 us, 33.3 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,    860.8 free,    771.9 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.    913.1 avail Mem 
+top - 05:34:21 up  3:58,  2 users,  load average: 0.68, 0.17, 0.11
+Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 28.6 us, 28.6 sy,  0.0 ni,  0.0 id,  0.0 wa, 28.6 hi, 14.3 si,  0.0 st
+MiB Mem :   1827.1 total,    694.6 free,   1033.1 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.    670.8 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  669176 449872   2912 R  41.2  24.0   0:04.80 mem.bash
-   2721 root      20   0  459824 240248   2904 R  41.2  12.8   0:02.59 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0  796556 577092   2884 R  36.8  30.8   0:06.16 mem.bash
+   3022 root      20   0  602648 383140   2976 R  36.8  20.5   0:04.10 mem2.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  669176 449872   2912 R  41.2  24.0   0:04.80 mem.bash
+   3003 root      20   0  796556 577092   2884 R  36.8  30.8   0:06.16 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  602648 383140   2976 R  36.8  20.5   0:04.10 mem2.bash
 
 == top log no.13
 first table lines:
-top - 05:19:18 up  3:43,  2 users,  load average: 0.31, 0.07, 0.02
+top - 05:34:23 up  3:58,  2 users,  load average: 0.68, 0.17, 0.11
 Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,    759.1 free,    873.6 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.    811.4 avail Mem 
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
+MiB Mem :   1827.1 total,    589.2 free,   1138.6 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.    565.3 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0  512096 292784   2904 R  47.1  15.6   0:03.16 mem2.bash
-   2704 root      20   0  720788 501352   2912 R  41.2  26.8   0:05.35 mem.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0  851996 632532   2884 R  44.4  33.8   0:06.76 mem.bash
+   3022 root      20   0  654920 435412   2976 R  38.9  23.3   0:04.67 mem2.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  720788 501352   2912 R  41.2  26.8   0:05.35 mem.bash
+   3003 root      20   0  851996 632532   2884 R  44.4  33.8   0:06.76 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  654920 435412   2976 R  38.9  23.3   0:04.67 mem2.bash
 
 == top log no.14
 first table lines:
-top - 05:19:19 up  3:43,  2 users,  load average: 0.31, 0.07, 0.02
+top - 05:34:24 up  3:58,  2 users,  load average: 0.68, 0.17, 0.11
 Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi, 20.0 si,  0.0 st
-MiB Mem :   1827.1 total,    661.6 free,    971.1 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.    713.9 avail Mem 
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
+MiB Mem :   1827.1 total,    491.0 free,   1236.8 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.    467.1 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0  560804 341360   2904 R  41.2  18.2   0:03.69 mem2.bash
-   2704 root      20   0  771872 552304   2912 R  35.3  29.5   0:05.89 mem.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3022 root      20   0  704948 485572   2976 R  43.8  26.0   0:05.24 mem2.bash
+   3003 root      20   0  902288 682692   2884 R  37.5  36.5   0:07.32 mem.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  771872 552304   2912 R  35.3  29.5   0:05.89 mem.bash
+   3003 root      20   0  902288 682692   2884 R  37.5  36.5   0:07.32 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  704948 485572   2976 R  43.8  26.0   0:05.24 mem2.bash
 
 == top log no.15
 first table lines:
-top - 05:19:20 up  3:43,  2 users,  load average: 0.31, 0.07, 0.02
+top - 05:34:26 up  3:58,  2 users,  load average: 0.78, 0.20, 0.12
 Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
-MiB Mem :   1827.1 total,    558.8 free,   1074.0 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.    611.0 avail Mem 
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,    383.9 free,   1343.8 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.    360.1 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  825200 605896   2912 R  47.1  32.4   0:06.47 mem.bash
-   2721 root      20   0  612416 392840   2904 R  41.2  21.0   0:04.25 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3022 root      20   0  760124 540748   2976 R  42.1  28.9   0:05.83 mem2.bash
+   3003 root      20   0  956540 737076   2884 R  36.8  39.4   0:07.90 mem.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  825200 605896   2912 R  47.1  32.4   0:06.47 mem.bash
+   3003 root      20   0  956540 737076   2884 R  36.8  39.4   0:07.90 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  760124 540748   2976 R  42.1  28.9   0:05.83 mem2.bash
 
 == top log no.16
 first table lines:
-top - 05:19:21 up  3:43,  2 users,  load average: 0.44, 0.10, 0.03
+top - 05:34:27 up  3:58,  2 users,  load average: 0.78, 0.20, 0.12
 Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 25.0 us,  0.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi, 25.0 si,  0.0 st
-MiB Mem :   1827.1 total,    459.7 free,   1173.1 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.    512.0 avail Mem 
+%Cpu(s): 50.0 us,  0.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,    278.1 free,   1449.6 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.    254.2 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  876020 656584   2912 R  41.2  35.1   0:07.01 mem.bash
-   2721 root      20   0  662972 443528   2904 R  41.2  23.7   0:04.80 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0 1010396 790932   2884 R  41.2  42.3   0:08.48 mem.bash
+   3022 root      20   0  814508 595132   2976 R  35.3  31.8   0:06.41 mem2.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  876020 656584   2912 R  41.2  35.1   0:07.01 mem.bash
+   3003 root      20   0 1010396 790932   2884 R  41.2  42.3   0:08.48 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  814508 595132   2976 R  35.3  31.8   0:06.41 mem2.bash
 
 == top log no.17
 first table lines:
-top - 05:19:23 up  3:43,  2 users,  load average: 0.44, 0.10, 0.03
+top - 05:34:28 up  3:58,  2 users,  load average: 0.78, 0.20, 0.12
 Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 25.0 hi, 25.0 si,  0.0 st
-MiB Mem :   1827.1 total,    356.5 free,   1276.3 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.    408.7 avail Mem 
+%Cpu(s): 20.0 us, 40.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,    171.0 free,   1556.7 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.    147.2 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  929216 709648   2912 R  41.2  37.9   0:07.58 mem.bash
-   2721 root      20   0  715244 495800   2904 R  41.2  26.5   0:05.37 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0 1065968 846372   2884 R  42.1  45.2   0:09.07 mem.bash
+   3022 root      20   0  868232 648988   2976 R  36.8  34.7   0:06.99 mem2.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  929216 709648   2912 R  41.2  37.9   0:07.58 mem.bash
+   3003 root      20   0 1065968 846372   2884 R  42.1  45.2   0:09.07 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  868232 648988   2976 R  36.8  34.7   0:06.99 mem2.bash
 
 == top log no.18
 first table lines:
-top - 05:19:24 up  3:43,  2 users,  load average: 0.44, 0.10, 0.03
-Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
-MiB Mem :   1827.1 total,    257.5 free,   1375.3 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.    309.8 avail Mem 
+top - 05:34:30 up  3:58,  2 users,  load average: 0.78, 0.20, 0.12
+Tasks: 109 total,   4 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,     68.0 free,   1659.7 used,     99.3 buff/cache
+MiB Swap:    820.0 total,    730.3 free,     89.7 used.     44.2 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0  979904 760336   2912 R  36.8  40.6   0:08.14 mem.bash
-   2721 root      20   0  765668 546224   2904 R  36.8  29.2   0:05.93 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3003 root      20   0 1118372 898908   2884 R  41.2  48.0   0:09.63 mem.bash
+   3022 root      20   0  921032 701788   2976 R  41.2  37.5   0:07.56 mem2.bash
+      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0  979904 760336   2912 R  36.8  40.6   0:08.14 mem.bash
+   3003 root      20   0 1118372 898908   2884 R  41.2  48.0   0:09.63 mem.bash
+'mem2.bash' log:
+   3022 root      20   0  921032 701788   2976 R  41.2  37.5   0:07.56 mem2.bash
 
 == top log no.19
 first table lines:
-top - 05:19:25 up  3:43,  2 users,  load average: 0.57, 0.13, 0.04
-Tasks: 109 total,   3 running, 106 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 20.0 hi, 20.0 si,  0.0 st
-MiB Mem :   1827.1 total,    157.1 free,   1475.7 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.    209.3 avail Mem 
+top - 05:34:38 up  3:58,  2 users,  load average: 1.52, 0.38, 0.18
+Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 16.6 us, 35.4 sy,  0.0 ni,  0.0 id,  1.7 wa, 39.2 hi,  7.2 si,  0.0 st
+MiB Mem :   1827.1 total,     69.1 free,   1720.0 used,     37.9 buff/cache
+MiB Swap:    820.0 total,    259.1 free,    560.9 used.     15.1 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0 1031648 812344   2912 R  50.0  43.4   0:08.70 mem.bash
-   2721 root      20   0  816488 596912   2904 R  31.2  31.9   0:06.48 mem2.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3022 root      20   0 1188596 825164    592 R   1.9  44.1   0:10.49 mem2.bash
+   3003 root      20   0 1394120 836952    432 R   1.6  44.7   0:12.60 mem.bash
+     41 root      20   0       0      0      0 S   0.8   0.0   0:20.90 kswapd0
+      1 root      20   0  179204     40     40 S   0.0   0.0   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
-      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
 'mem.bash' log:
-   2704 root      20   0 1031648 812344   2912 R  50.0  43.4   0:08.70 mem.bash
+   3003 root      20   0 1394120 836952    432 R   1.6  44.7   0:12.60 mem.bash
+'mem2.bash' log:
+   3022 root      20   0 1188596 825164    592 R   1.9  44.1   0:10.49 mem2.bash
 
 == top log no.20
 first table lines:
-top - 05:19:27 up  3:43,  2 users,  load average: 0.57, 0.13, 0.04
-Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 28.6 us, 28.6 sy,  0.0 ni,  0.0 id,  0.0 wa, 28.6 hi, 14.3 si,  0.0 st
-MiB Mem :   1827.1 total,     56.9 free,   1575.8 used,    194.3 buff/cache
-MiB Swap:    820.0 total,    731.1 free,     88.9 used.    109.2 avail Mem 
+top - 05:34:44 up  3:58,  2 users,  load average: 1.64, 0.42, 0.20
+Tasks: 108 total,   4 running, 104 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 19.2 us, 26.9 sy,  0.0 ni,  0.0 id,  0.0 wa, 42.3 hi, 11.5 si,  0.0 st
+MiB Mem :   1827.1 total,    785.0 free,    991.2 used,     50.9 buff/cache
+MiB Swap:    820.0 total,    458.8 free,    361.2 used.    737.3 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0  867704 648392   2904 R  42.1  34.7   0:07.04 mem2.bash
-   2704 root      20   0 1082732 863296   2912 R  36.8  46.1   0:09.25 mem.bash
-      1 root      20   0  179204   6452   4120 S   0.0   0.3   0:02.33 systemd
+   3022 root      20   0 1410620 916652   1732 R  21.4  49.0   0:12.91 mem2.bash
+      1 root      20   0  179204      4      4 S   0.0   0.0   0:02.36 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
-   2704 root      20   0 1082732 863296   2912 R  36.8  46.1   0:09.25 mem.bash
+'mem2.bash' log:
+   3022 root      20   0 1410620 916652   1732 R  21.4  49.0   0:12.91 mem2.bash
 
 == top log no.21
 first table lines:
-top - 05:19:32 up  3:43,  2 users,  load average: 1.08, 0.24, 0.08
-Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 16.4 us, 36.9 sy,  0.0 ni,  0.0 id,  0.0 wa, 39.3 hi,  7.4 si,  0.0 st
-MiB Mem :   1827.1 total,     83.0 free,   1717.0 used,     27.1 buff/cache
-MiB Swap:    820.0 total,    513.9 free,    306.1 used.     23.6 avail Mem 
+top - 05:34:46 up  3:58,  2 users,  load average: 1.83, 0.48, 0.22
+Tasks: 108 total,   3 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,    631.8 free,   1140.3 used,     54.9 buff/cache
+MiB Swap:    820.0 total,    459.4 free,    360.6 used.    585.9 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0 1268720 836444    524 R   3.4  44.7   0:11.27 mem.bash
-   2721 root      20   0 1051448 824508    540 R   2.7  44.1   0:09.07 mem2.bash
-      1 root      20   0  179204    120    120 S   0.0   0.0   0:02.33 systemd
+   3022 root      20   0 1562552   1.0g   1732 R  88.2  57.1   0:14.55 mem2.bash
+      1 root      20   0  179204   1680   1540 D   5.9   0.1   0:02.37 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
-   2704 root      20   0 1268720 836444    524 R   3.4  44.7   0:11.27 mem.bash
+'mem2.bash' log:
+   3022 root      20   0 1562552   1.0g   1732 R  88.2  57.1   0:14.55 mem2.bash
 
 == top log no.22
 first table lines:
-top - 05:19:37 up  3:43,  2 users,  load average: 1.56, 0.36, 0.12
-Tasks: 109 total,   5 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 16.7 us, 40.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 36.7 hi,  6.7 si,  0.0 st
-MiB Mem :   1827.1 total,     66.6 free,   1726.7 used,     33.7 buff/cache
-MiB Swap:    820.0 total,    255.8 free,    564.2 used.     10.5 avail Mem 
+top - 05:34:47 up  3:58,  2 users,  load average: 1.83, 0.48, 0.22
+Tasks: 108 total,   3 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi, 20.0 si,  0.0 st
+MiB Mem :   1827.1 total,    537.2 free,   1234.3 used,     55.6 buff/cache
+MiB Swap:    820.0 total,    459.4 free,    360.6 used.    491.6 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2704 root      20   0 1403888 838148    872 R  15.7  44.8   0:12.73 mem.bash
-   2721 root      20   0 1183580 825808    900 R  13.7  44.1   0:10.51 mem2.bash
-     41 root      20   0       0      0      0 S   2.0   0.0   0:19.03 kswapd0
-      1 root      20   0  179204    120    120 S   0.0   0.0   0:02.33 systemd
+   3022 root      20   0 1658516   1.1g   1732 R  82.4  62.2   0:15.58 mem2.bash
+      1 root      20   0  179204   2592   2344 S   0.0   0.1   0:02.37 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
-   2704 root      20   0 1403888 838148    872 R  15.7  44.8   0:12.73 mem.bash
+'mem2.bash' log:
+   3022 root      20   0 1658516   1.1g   1732 R  82.4  62.2   0:15.58 mem2.bash
 
 == top log no.23
 first table lines:
-top - 05:19:43 up  3:43,  2 users,  load average: 1.75, 0.42, 0.14
-Tasks: 108 total,   5 running, 103 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 23.8 us, 28.6 sy,  0.0 ni,  0.0 id,  0.0 wa, 38.1 hi,  9.5 si,  0.0 st
-MiB Mem :   1827.1 total,    789.0 free,    986.2 used,     51.8 buff/cache
-MiB Swap:    820.0 total,    465.9 free,    354.1 used.    741.9 avail Mem 
+top - 05:34:48 up  3:58,  2 users,  load average: 1.83, 0.48, 0.22
+Tasks: 108 total,   3 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,    438.9 free,   1332.6 used,     55.6 buff/cache
+MiB Swap:    820.0 total,    459.4 free,    360.6 used.    393.3 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0 1395836 908584   1792 R  25.5  48.6   0:12.85 mem2.bash
-   2843 root      20   0  274140   3764   3192 R   1.8   0.2   0:00.06 top
-      1 root      20   0  179204      4      4 S   0.0   0.0   0:02.33 systemd
+   3022 root      20   0 1758968   1.2g   1732 R  88.2  67.6   0:16.68 mem2.bash
+      1 root      20   0  179204   2592   2344 S   0.0   0.1   0:02.37 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
+'mem2.bash' log:
+   3022 root      20   0 1758968   1.2g   1732 R  88.2  67.6   0:16.68 mem2.bash
 
 == top log no.24
 first table lines:
-top - 05:19:45 up  3:43,  2 users,  load average: 1.75, 0.42, 0.14
-Tasks: 108 total,   4 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,    649.7 free,   1123.2 used,     54.2 buff/cache
-MiB Swap:    820.0 total,    466.5 free,    353.5 used.    603.5 avail Mem 
+top - 05:34:50 up  3:58,  2 users,  load average: 1.83, 0.48, 0.22
+Tasks: 108 total,   3 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
+MiB Mem :   1827.1 total,    333.4 free,   1438.0 used,     55.6 buff/cache
+MiB Swap:    820.0 total,    459.4 free,    360.6 used.    287.9 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0 1535756   1.0g   1792 R  88.2  56.0   0:14.37 mem2.bash
-      1 root      20   0  179204      4      4 S   0.0   0.0   0:02.33 systemd
+   3022 root      20   0 1866680   1.3g   1732 R  82.4  73.4   0:17.83 mem2.bash
+      1 root      20   0  179204   2592   2344 S   0.0   0.1   0:02.37 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
+'mem2.bash' log:
+   3022 root      20   0 1866680   1.3g   1732 R  82.4  73.4   0:17.83 mem2.bash
 
 == top log no.25
 first table lines:
-top - 05:19:46 up  3:43,  2 users,  load average: 1.69, 0.43, 0.14
-Tasks: 108 total,   4 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.0 hi, 20.0 si,  0.0 st
-MiB Mem :   1827.1 total,    553.9 free,   1218.9 used,     54.2 buff/cache
-MiB Swap:    820.0 total,    466.5 free,    353.5 used.    507.8 avail Mem 
+top - 05:34:51 up  3:58,  2 users,  load average: 1.76, 0.49, 0.22
+Tasks: 108 total,   3 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
+MiB Mem :   1827.1 total,    233.8 free,   1537.7 used,     55.6 buff/cache
+MiB Swap:    820.0 total,    459.4 free,    360.6 used.    188.2 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0 1633568   1.1g   1792 R  88.2  61.3   0:15.44 mem2.bash
-      1 root      20   0  179204      4      4 S   0.0   0.0   0:02.33 systemd
+   3022 root      20   0 1968452   1.4g   1732 R  82.4  78.8   0:18.93 mem2.bash
+      1 root      20   0  179204   2592   2344 S   0.0   0.1   0:02.37 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
+'mem2.bash' log:
+   3022 root      20   0 1968452   1.4g   1732 R  82.4  78.8   0:18.93 mem2.bash
 
 == top log no.26
 first table lines:
-top - 05:19:47 up  3:43,  2 users,  load average: 1.69, 0.43, 0.14
-Tasks: 108 total,   4 running, 104 sleeping,   0 stopped,   0 zombie
+top - 05:34:52 up  3:58,  2 users,  load average: 1.76, 0.49, 0.22
+Tasks: 108 total,   2 running, 106 sleeping,   0 stopped,   0 zombie
 %Cpu(s): 25.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,    455.7 free,   1317.1 used,     54.2 buff/cache
-MiB Swap:    820.0 total,    466.5 free,    353.5 used.    409.6 avail Mem 
+MiB Mem :   1827.1 total,    136.0 free,   1635.5 used,     55.6 buff/cache
+MiB Swap:    820.0 total,    459.4 free,    360.6 used.     90.4 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0 1733888   1.2g   1792 R  76.5  66.6   0:16.52 mem2.bash
-      1 root      20   0  179204      4      4 S   0.0   0.0   0:02.33 systemd
+   3022 root      20   0 2068508   1.5g   1732 R  86.7  84.2   0:20.02 mem2.bash
+      1 root      20   0  179204   2592   2344 S   0.0   0.1   0:02.37 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
+'mem2.bash' log:
+   3022 root      20   0 2068508   1.5g   1732 R  86.7  84.2   0:20.02 mem2.bash
 
 == top log no.27
 first table lines:
-top - 05:19:48 up  3:43,  2 users,  load average: 1.69, 0.43, 0.14
+top - 05:34:54 up  3:58,  2 users,  load average: 1.76, 0.49, 0.22
 Tasks: 108 total,   4 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 16.7 us, 33.3 sy,  0.0 ni,  0.0 id,  0.0 wa, 33.3 hi, 16.7 si,  0.0 st
-MiB Mem :   1827.1 total,    359.9 free,   1412.9 used,     54.3 buff/cache
-MiB Swap:    820.0 total,    466.5 free,    353.5 used.    313.8 avail Mem 
+%Cpu(s): 14.3 us, 42.9 sy,  0.0 ni,  0.0 id,  0.0 wa, 42.9 hi,  0.0 si,  0.0 st
+MiB Mem :   1827.1 total,     73.1 free,   1716.6 used,     37.4 buff/cache
+MiB Swap:    820.0 total,    445.8 free,    374.2 used.     18.4 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0 1831832   1.3g   1792 R  82.4  71.9   0:17.59 mem2.bash
-      1 root      20   0  179204      4      4 S   0.0   0.0   0:02.33 systemd
+   3022 root      20   0 2164472   1.6g   1732 R  64.7  88.5   0:21.07 mem2.bash
+     41 root      20   0       0      0      0 S   5.9   0.0   0:21.28 kswapd0
+      1 root      20   0  179204   2464   2216 S   0.0   0.1   0:02.37 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
+'mem2.bash' log:
+   3022 root      20   0 2164472   1.6g   1732 R  64.7  88.5   0:21.07 mem2.bash
 
 == top log no.28
 first table lines:
-top - 05:19:50 up  3:43,  2 users,  load average: 1.69, 0.43, 0.14
-Tasks: 108 total,   4 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 25.0 hi, 25.0 si,  0.0 st
-MiB Mem :   1827.1 total,    265.8 free,   1507.0 used,     54.3 buff/cache
-MiB Swap:    820.0 total,    466.5 free,    353.5 used.    219.7 avail Mem 
+top - 05:34:57 up  3:58,  2 users,  load average: 2.18, 0.60, 0.26
+Tasks: 108 total,   3 running, 105 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 16.2 us, 37.8 sy,  0.0 ni,  0.0 id,  0.0 wa, 40.5 hi,  5.4 si,  0.0 st
+MiB Mem :   1827.1 total,     76.6 free,   1722.4 used,     28.0 buff/cache
+MiB Swap:    820.0 total,    247.7 free,    572.3 used.     17.6 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0 1928060   1.4g   1792 R  88.2  77.0   0:18.65 mem2.bash
-      1 root      20   0  179204      4      4 S   0.0   0.0   0:02.33 systemd
-      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
-      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+   3022 root      20   0 2371580   1.6g    592 R  20.3  88.8   0:23.33 mem2.bash
+     41 root      20   0       0      0      0 S   5.1   0.0   0:21.53 kswapd0
+    809 root      20   0  635060   1536   1136 S   1.7   0.1   0:03.28 tuned
+   3253 root      20   0  274140   2156   1584 R   1.7   0.1   0:00.03 top
+      1 root      20   0  179204    304      0 S   0.0   0.0   0:02.37 systemd
 'mem.bash' log:
+'mem2.bash' log:
+   3022 root      20   0 2371580   1.6g    592 R  20.3  88.8   0:23.33 mem2.bash
 
 == top log no.29
 first table lines:
-top - 05:19:51 up  3:43,  2 users,  load average: 1.64, 0.44, 0.15
-Tasks: 108 total,   4 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni,  0.0 id,  0.0 wa, 50.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,    170.0 free,   1602.8 used,     54.3 buff/cache
-MiB Swap:    820.0 total,    466.5 free,    353.5 used.    123.8 avail Mem 
+top - 05:35:04 up  3:58,  2 users,  load average: 2.17, 0.62, 0.27
+Tasks: 108 total,   1 running, 107 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us, 22.7 sy,  0.0 ni,  0.0 id, 27.3 wa, 45.5 hi,  4.5 si,  0.0 st
+MiB Mem :   1827.1 total,   1672.2 free,     93.4 used,     61.4 buff/cache
+MiB Swap:    820.0 total,    727.1 free,     92.9 used.   1629.5 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0 2026004   1.5g   1792 R  93.3  82.2   0:19.72 mem2.bash
-      1 root      20   0  179204      4      4 S   0.0   0.0   0:02.33 systemd
+    386 root       0 -20       0      0      0 I   9.1   0.0   0:03.04 kworker/0:1H-kblockd
+    782 root      20   0  431112   1044    780 S   4.5   0.1   0:00.54 sssd_nss
+   3265 root      20   0  310296   5668   4792 S   4.5   0.3   0:00.13 crond
+      1 root      20   0  179204    240      0 S   0.0   0.0   0:02.37 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
-      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
 'mem.bash' log:
+'mem2.bash' log:
 
 == top log no.30
 first table lines:
-top - 05:19:52 up  3:43,  2 users,  load average: 1.64, 0.44, 0.15
-Tasks: 108 total,   4 running, 104 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 33.3 us, 33.3 sy,  0.0 ni,  0.0 id,  0.0 wa, 16.7 hi, 16.7 si,  0.0 st
-MiB Mem :   1827.1 total,     74.5 free,   1698.3 used,     54.3 buff/cache
-MiB Swap:    820.0 total,    466.5 free,    353.5 used.     28.3 avail Mem 
-
-    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0 2123552   1.6g   1792 R  88.2  87.5   0:20.80 mem2.bash
-      1 root      20   0  179204      4      4 S   0.0   0.0   0:02.33 systemd
-      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
-      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
-'mem.bash' log:
-
-== top log no.31
-first table lines:
-top - 05:19:57 up  3:43,  2 users,  load average: 2.15, 0.56, 0.19
-Tasks: 108 total,   6 running, 102 sleeping,   0 stopped,   0 zombie
-%Cpu(s): 15.1 us, 37.7 sy,  0.0 ni,  0.0 id,  0.0 wa, 41.5 hi,  5.7 si,  0.0 st
-MiB Mem :   1827.1 total,     64.7 free,   1733.9 used,     28.4 buff/cache
-MiB Swap:    820.0 total,    229.9 free,    590.1 used.      5.9 avail Mem 
-
-    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   2721 root      20   0 2401940   1.6g    632 R  14.9  88.6   0:23.85 mem2.bash
-     41 root      20   0       0      0      0 R   3.4   0.0   0:19.72 kswapd0
-      1 root      20   0  179204    564    424 R   1.1   0.0   0:02.34 systemd
-   2907 root      20   0  274140   1592   1020 R   1.1   0.1   0:00.04 top
-      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
-'mem.bash' log:
-
-== top log no.32
-first table lines:
-top - 05:20:03 up  3:43,  2 users,  load average: 2.30, 0.62, 0.21
-Tasks: 108 total,   3 running, 105 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us, 23.8 sy,  0.0 ni,  0.0 id, 19.0 wa, 52.4 hi,  4.8 si,  0.0 st
-MiB Mem :   1827.1 total,   1671.2 free,     93.8 used,     62.0 buff/cache
-MiB Swap:    820.0 total,    727.2 free,     92.8 used.   1628.8 avail Mem 
-
-    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-    386 root       0 -20       0      0      0 I   9.1   0.0   0:02.69 kworker/0:1H-kblockd
-   2915 root      20   0  274140   4508   3932 R   4.5   0.2   0:00.16 top
-   2917 root      20   0  310296   5804   4924 S   4.5   0.3   0:00.01 crond
-      1 root      20   0  179204    220      0 S   0.0   0.0   0:02.34 systemd
-      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
-'mem.bash' log:
-
-== top log no.33
-first table lines:
-top - 05:20:04 up  3:43,  2 users,  load average: 2.30, 0.62, 0.21
-Tasks: 109 total,   2 running, 107 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  5.9 sy,  0.0 ni, 88.2 id,  0.0 wa,  5.9 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1644.1 free,     97.5 used,     85.4 buff/cache
-MiB Swap:    820.0 total,    729.7 free,     90.3 used.   1613.3 avail Mem 
-
-    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
-      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
-      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
-      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
-'mem.bash' log:
-
-== top log no.34
-first table lines:
-top - 05:20:05 up  3:43,  2 users,  load average: 2.30, 0.62, 0.21
-Tasks: 109 total,   1 running, 108 sleeping,   0 stopped,   0 zombie
+top - 05:35:05 up  3:58,  2 users,  load average: 2.17, 0.62, 0.27
+Tasks: 107 total,   1 running, 106 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1644.1 free,     97.5 used,     85.5 buff/cache
-MiB Swap:    820.0 total,    729.7 free,     90.3 used.   1613.3 avail Mem 
+MiB Mem :   1827.1 total,   1644.7 free,     97.2 used,     85.1 buff/cache
+MiB Swap:    820.0 total,    729.6 free,     90.4 used.   1613.8 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
+   2977 root      20   0       0      0      0 I   6.7   0.0   0:00.14 kworker/0:1-events_power_ef+
+      1 root      20   0  179204   5688   4008 S   0.0   0.3   0:02.39 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
-      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
 'mem.bash' log:
-
-== top log no.35
-first table lines:
-top - 05:20:06 up  3:43,  2 users,  load average: 2.11, 0.61, 0.21
-Tasks: 109 total,   1 running, 108 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   1827.1 total,   1644.0 free,     97.5 used,     85.5 buff/cache
-MiB Swap:    820.0 total,    729.7 free,     90.3 used.   1613.3 avail Mem 
-
-    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  179204   5768   4036 S   0.0   0.3   0:02.36 systemd
-      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
-      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
-      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
-'mem.bash' log:
+'mem2.bash' log:
 
