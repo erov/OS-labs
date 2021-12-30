@@ -1,0 +1,1 @@
+fc services.txt services-new.txt > services-comparing-result.txt

@@ -1,0 +1,1 @@
+copy /z /-y C:\lab6\CentOS8-disk001.vdi \\erove-desktop\temp

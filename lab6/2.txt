@@ -1,0 +1,12 @@
+hostname
+mkdir dst
+net share temp=C:\lab6\dst /grant:mrero,FULL
+
+C:\lab6>type copy.cmd
+copy /z /-y C:\lab6\CentOS8-disk001.vdi \\erove-desktop\temp
+
+schtasks /create /sc MINUTE /tn copying /tr C:\lab6\copy.cmd
+
+C:\lab6>fc C:\lab6\CentOS8-disk001.vdi \\erove-desktop\temp\CentOS8-disk001.vdi
+Сравнение файлов C:\LAB6\CentOS8-disk001.vdi и \\EROVE-DESKTOP\TEMP\CENTOS8-DISK001.VDI
+FC: различия не найдены

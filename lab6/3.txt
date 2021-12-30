@@ -1,0 +1,11 @@
+sc query > services.txt
+
+C:\lab6>type dnscache-stop.cmd
+net stop dnscache
+timeout /t 10
+sc query > services-new.txt
+compare-services.cmd
+net start dnscache
+
+C:\lab6>type compare-services.cmd
+fc services.txt services-new.txt > services-comparing-result.txt

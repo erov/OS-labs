@@ -1,0 +1,3 @@
+Сравнение файлов services.txt и SERVICES-NEW.TXT
+FC: различия не найдены
+
