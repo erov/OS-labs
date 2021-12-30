@@ -1,0 +1,15 @@
+mkdir lab6
+cd lab6
+ver > ver.txt
+systeminfo | find "Physical Memory" > systeminfo.txt
+wmic logicaldisk get description,name > wmic.txt
+
+mkdir test
+
+Total Physical Memory:     8 112 MB
+Available Physical Memory: 2 842 MB
+
+Microsoft Windows [Version 10.0.19042.1415]
+Description       Name  
+Local Fixed Disk  C:    
+Local Fixed Disk  D:    
