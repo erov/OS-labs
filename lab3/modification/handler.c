@@ -9,57 +9,52 @@
 #include <sys/types.h>
 #include <time.h>
 
-#define MAX 80
+#define MAX 100
 #define PORT 8080
 #define SA struct sockaddr
 
 int main()
 {
-   int sockfd, connfd, len;
-   struct sockaddr_in servaddr, cli;
+   struct sockaddr_in servaddr, client;
 
-   // socket create and verification
-   sockfd = socket(AF_INET, SOCK_STREAM, 0);
+   int sockfd = socket(AF_INET, SOCK_STREAM, 0);
    if (sockfd == -1) {
       printf("socket creation failed...\n");
-      exit(0);
-   }
-   else {
+      return 1;
+   } else {
       printf("Socket successfully created..\n");
    }
+
    bzero(&servaddr, sizeof(servaddr));
 
-   // assign IP, PORT
    servaddr.sin_family = AF_INET;
    servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
    servaddr.sin_port = htons(PORT);
 
-   // Binding newly created socket to given IP and verification
    if ((bind(sockfd, (SA*)&servaddr, sizeof(servaddr))) != 0) {
       printf("socket bind failed...\n");
-      exit(0);
-   }
-   else {
+      close(sockfd);
+      return 1;
+   } else {
       printf("Socket successfully binded..\n");
    }
 
-   // Now server is ready to listen and verification
    if ((listen(sockfd, 5)) != 0) {
       printf("Listen failed...\n");
-      exit(0);
-   }
-   else {
+      close(sockfd);
+      return 1;
+   } else {
       printf("Server listening..\n");
    }
-   len = sizeof(cli);
 
-   // Accept the data packet from client and verification
-   connfd = accept(sockfd, (SA*)&cli, &len);
+   int len = sizeof(client);
+
+   int connfd = accept(sockfd, (SA*)&client, &len);
    if (connfd < 0) {
       printf("server accept failed...\n");
-      exit(0);
-   }
-   else{
+      close(sockfd);
+      return 1;
+   } else {
       printf("server accept the client...\n");
    }
 
@@ -72,17 +67,15 @@ int main()
 
    for (;;) {
       bzero(buff, MAX);
-
       read(connfd, buff, sizeof(buff));
-      // printf("From client: %s", buff);
 
-      if (buff[0] == '+' && strlen(buff) == 2) {
+      if (strncmp(buff, "+", 1) == 0) {
          mode = '+';
       }
-      else if (buff[0] == '*' && strlen(buff) == 2) {
+      else if (strncmp(buff, "*", 1) == 0) {
          mode = '*';
       }
-      else if (buff[0] == 'Q' && buff[1] == 'U' && buff[2] == 'I' && buff[3] == 'T' && strlen(buff) == 5) {
+      else if (strncmp(buff, "QUIT", 1) == 0) {
          break;
       }
       else {
