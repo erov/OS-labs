@@ -1,17 +1,6 @@
-#include <algorithm>
-#include <cassert>
-#include <climits>
-#include <cmath>
-#include <cstddef>
-#include <iomanip>
 #include <iostream>
 #include <fstream>
-#include <map>
 #include <queue>
-#include <set>
-#include <unordered_map>
-#include <unordered_set>
-#include <vector>
 
 using namespace std;
 
@@ -32,6 +21,17 @@ void read_lines(ifstream& file, bool top, size_t cnt) {
         cout << it << '\n';
     }
 }
+
+void read_lines(size_t cnt) {
+    string str;
+    while (getline(cin, str)) {
+        cout << str << '\n';
+        if (--cnt == 0) {
+            break;
+        }
+    }
+}
+
 
 void read_bytes(ifstream& file, bool top, size_t cnt) {
     deque<char> q;
@@ -66,16 +66,6 @@ void read_bytes(ifstream& file, bool top, size_t cnt) {
     }
 }
 
-void read_lines(size_t cnt) {
-    string str;
-    while (getline(cin, str)) {
-        cout << str << '\n';
-        if (--cnt == 0) {
-            break;
-        }
-    }
-}
-
 void read_bytes(size_t cnt) {
     string str;
     while (getline(cin, str)) {
@@ -96,6 +86,7 @@ void read_bytes(size_t cnt) {
         }
     }
 }
+
 
 int main(int argc, char* argv[]) {
 
@@ -215,4 +206,3 @@ int main(int argc, char* argv[]) {
 
     }
 }
-
