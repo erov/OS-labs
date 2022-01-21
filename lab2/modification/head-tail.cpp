@@ -1,8 +1,10 @@
 #include <iostream>
+#include <cstddef>
 #include <fstream>
 #include <queue>
 
 using namespace std;
+
 
 void read_lines(ifstream& file, bool top, size_t cnt) {
     deque<string> q;
@@ -89,7 +91,6 @@ void read_bytes(size_t cnt) {
 
 
 int main(int argc, char* argv[]) {
-
     if (argc == 1 || (argc > 1 && !(static_cast<string>(argv[1]) == "head" || static_cast<string>(argv[1]) == "tail"))) {
         cerr << "USAGE head/tail [OPTION]... [FILE]...";
         return 1;
@@ -139,7 +140,7 @@ int main(int argc, char* argv[]) {
             lines = true;
             
             int32_t suffix = 1;
-            string value = argv[3];
+            string value = argv[i + 1];
             
             switch (value.back()) {
                 case 'b':
@@ -186,7 +187,6 @@ int main(int argc, char* argv[]) {
     }
 
     for (string filename : files) {
-        
         ifstream file(filename);
 
         if (file.fail()) {
@@ -203,6 +203,5 @@ int main(int argc, char* argv[]) {
         } else {
             read_bytes(file, top, cnt);
         }
-
     }
 }
