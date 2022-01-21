@@ -14,7 +14,14 @@
 #define SA struct sockaddr
 
 int is_number(char const* buff) {
-    for (size_t i = 0; i != strlen(buff) - 1; ++i) {
+    if (strlen(buff) == 0) {
+        return 0;
+    }
+    size_t i = 0;
+    if (buff[i] == '-' || buff[i] == '+') {
+        ++i;
+    }
+    for (; i != strlen(buff) - 1; ++i) {
         if (!('0' <= buff[i] && buff[i] <= '9')) {
             return 0;
         }
@@ -28,26 +35,20 @@ int main()
 
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd == -1) {
-        printf("socket creation failed...\n");
+        printf("socket creation failed\n");
         return 1;
-    } else {
-        printf("Socket successfully created..\n");
     }
 
     bzero(&servaddr, sizeof(servaddr));
-
     servaddr.sin_family = AF_INET;
     servaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
     servaddr.sin_port = htons(PORT);
 
     if (connect(sockfd, (SA*)&servaddr, sizeof(servaddr)) != 0) {
-        printf("connection with the server failed...\n");
+        printf("connection with the handler failed\n");
         close(sockfd);
         return 1;
-    } else {
-        printf("connected to the server..\n");
     }
-
 
     char buff[MAX];
     int n;
